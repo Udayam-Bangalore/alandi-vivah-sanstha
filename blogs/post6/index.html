@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alandi Vivah Sanstha Blogs</title>
+    <title>Modern Unions & Legal Bonds - A Guide by Alandi Vivah Sanstha</title>
+    <meta name="description" content="A complete guide on various forms of unions in India - Arranged Marriage, Love Marriage, Registered Marriage, and Live-in Relationships.">
     <link rel="icon" href="/wp-content/uploads/2025/10/cropped-cropped-alandi-vivah-sanstha-logo-png-2-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -15,7 +16,6 @@
             line-height: 1.6;
         }
 
-        /* Header Styles */
         .site-header {
             background: #fff;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -45,12 +45,6 @@
             height: 75px;
         }
 
-        .logo-text {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #580700;
-        }
-
         .nav-menu {
             display: flex;
             list-style: none;
@@ -68,94 +62,167 @@
             color: #580700;
         }
 
-        /* Blog Section */
-        .blog-container {
-            max-width: 1200px;
+        .post-container {
+            max-width: 900px;
             margin: 0 auto;
             padding: 60px 20px;
         }
 
-        .blog-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .blog-header h1 {
-            font-size: 2.5rem;
-            color: #580700;
-            margin-bottom: 15px;
-        }
-
-        .blog-header p {
-            color: #580700;
-            font-weight: 500;
-        }
-
-        .posts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-
-        .blog-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-        }
-
-        .blog-card-image {
+        .post-image {
             width: 100%;
-            height: 220px;
+            height: 400px;
             object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 30px;
         }
 
-        .blog-card-body {
-            padding: 25px;
+        .post-header {
+            text-align: center;
+            margin-bottom: 40px;
         }
 
-        .blog-card-title {
-            font-size: 1.3rem;
-            color: #333;
+        .post-header h1 {
+            font-size: 2.2rem;
+            color: #580700;
             margin-bottom: 10px;
-            font-weight: 600;
         }
 
-        .blog-card-date {
+        .post-header .post-date {
             color: #888;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
+        }
+
+        .post-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .post-content h2 {
+            color: #580700;
+            margin: 30px 0 15px;
+            font-size: 1.5rem;
+            border-left: 4px solid #EF7F13;
+            padding-left: 15px;
+        }
+
+        .post-content h3 {
+            color: #333;
+            margin: 25px 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .post-content p {
+            margin-bottom: 15px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .post-content ul {
+            margin: 15px 0 20px 25px;
+        }
+
+        .post-content li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .post-content strong {
+            color: #580700;
+        }
+
+        .section-box {
+            background: #fff8f0;
+            border: 2px solid #EF7F13;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .section-box h3 {
+            color: #EF7F13;
             margin-bottom: 15px;
         }
 
-        .blog-card-excerpt {
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.6;
+        .package-box {
+            background: linear-gradient(135deg, #205B4F 0%, #2a7a6a 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
         }
 
-        .blog-card-btn {
+        .package-box h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .package-box p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.1rem;
+        }
+
+        .contact-box {
+            background: #f0fdf4;
+            border: 2px solid #61CE70;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: #205B4F;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .contact-box a {
+            color: #580700;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .cta-btn {
             display: inline-block;
-            padding: 10px 25px;
+            margin-top: 20px;
+            padding: 15px 30px;
             background: #EF7F13;
             color: white;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            font-size: 0.9rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
             transition: background 0.3s;
         }
 
-        .blog-card-btn:hover {
+        .cta-btn:hover {
             background: #D96B0F;
         }
 
-        /* Footer Styles */
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 25px;
+            background: #EF7F13;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: #D96B0F;
+        }
+
         .site-footer {
             background: #205B4F;
             color: white;
@@ -268,7 +335,6 @@
             color: rgba(255,255,255,0.7);
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -280,20 +346,23 @@
                 justify-content: center;
                 gap: 15px;
             }
-            
-            .posts-grid {
-                grid-template-columns: 1fr;
+
+            .post-image {
+                height: 250px;
             }
-            
-            .blog-header h1 {
-                font-size: 2rem;
+
+            .post-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .post-content {
+                padding: 25px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER -->
     <header class="site-header">
         <div class="header-container">
             <div class="logo">
@@ -316,94 +385,81 @@
         </div>
     </header>
 
-    <!-- BLOG CONTENT -->
-    <div class="blog-container">
-        <div class="blog-header">
-            <h1>Alandi Vivah Sanstha Blogs</h1>
-            <p>Expert tips, guides, and advice for your wedding journey</p>
+    <div class="post-container">
+        <img src="/wp-content/uploads/2026/alandi-gallery-016.webp" alt="Modern Unions & Legal Bonds" class="post-image">
+        
+        <div class="post-header">
+            <h1>Modern Unions & Legal Bonds</h1>
+            <p class="post-date">May 07 2026</p>
         </div>
 
-        <div class="posts-grid">
-            <!-- POST 1 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2025/10/alandi-vivah-sanstha-blogs-post1-thumbnail.webp" alt="Wedding Planning" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">Wedding Preparation Guide - Where to Start?</h2>
-                    <p class="blog-card-date">Oct 30 2025</p>
-                    <p class="blog-card-excerpt">लग्न हा प्रत्येकाच्या आयुष्यातला सर्वात खास दिवस असतो. पण या दिवसाची तयारी करणे म्हणजे एक मोठं प्रोजेक्टच असतं!</p>
-                    <a href="/blogs/post1" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+        <div class="post-content">
+            <p>Whether it's a traditional family setup or a modern legal union, choosing how you want to spend your life with your partner is a monumental decision. Below is an expert guide on the various forms of unions in India.</p>
 
-            <!-- POST 2 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-001.webp" alt="Court Marriage" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">Court Marriage: एक सोपा आणि वेगवान मार्ग</h2>
-                    <p class="blog-card-date">Mar 08 2026</p>
-                    <p class="blog-card-excerpt">आजच्या धावत्या जीवनात, प्रत्येक गोष्टीला जास्तीत जास्त सुलभ आणि वेगवान पद्धतीने करण्याची इच्छा असते.</p>
-                    <a href="/blogs/post2" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <h2>Tradition Meets Love</h2>
+            <div class="section-box">
+                <h3>1. Arranged Marriage</h3>
+                <p>A time-honored tradition where families play a key role in finding a compatible partner. Modern arranged marriages focus on shared values, educational backgrounds, and family culture, followed by a period where the couple gets to know each other.</p>
+                <ul>
+                    <li><strong>Focus:</strong> Family compatibility and long-term stability.</li>
+                    <li><strong>Our Service:</strong> We provide beautiful halls for traditional ceremonies for up to 500 guests.</li>
+                </ul>
+            </div>
 
-            <!-- POST 3 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-005.webp" alt="Love Marriage" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">Alandi Love Marriage म्हणजे काय?</h2>
-                    <p class="blog-card-date">Apr 08 2026</p>
-                    <p class="blog-card-excerpt">आळंदी लव्ह मॅरेज ही एक कायदेशीर विवाह प्रक्रिया आहे ज्याद्वारे प्रेमामुळे ठरलेल्या जोडप्यांना सरकार-मान्य रीतीने विवाह नोंदवता येतो.</p>
-                    <a href="/blogs/post3" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <div class="section-box">
+                <h3>2. Love Marriage</h3>
+                <p>Where personal choice and emotional bond take center stage. Today, many love marriages are beautifully integrated with traditional rituals to honor both the couple's wishes and family sentiments.</p>
+                <ul>
+                    <li><strong>Focus:</strong> Mutual understanding and emotional connection.</li>
+                    <li><strong>Specialty:</strong> We assist in inter-caste and inter-religious love marriages with complete social and legal support.</li>
+                </ul>
+            </div>
 
-            <!-- POST 4 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-013.webp" alt="Register Marriage" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">Why Choose Alandi for Your Register Marriage?</h2>
-                    <p class="blog-card-date">May 05 2026</p>
-                    <p class="blog-card-excerpt">Alandi, the holy city of Saint Dnyaneshwar Maharaj, is not only a spiritual sanctuary but also one of the most trusted destinations.</p>
-                    <a href="/blogs/post4" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <h2>Legal Security</h2>
+            <div class="section-box">
+                <h3>3. Registered & Court Marriage</h3>
+                <p>Registered and Court marriages are legal unions performed under the Special Marriage Act or the Hindu Marriage Act. These are ideal for couples seeking a simple, low-cost, and legally binding ceremony.</p>
+                <ul>
+                    <li><strong>The Process:</strong> Documentation, presence of witnesses, and signing before the Marriage Registrar.</li>
+                    <li><strong>Benefit:</strong> Instant legal proof for Visa, Insurance, and Banking.</li>
+                    <li><strong>Service:</strong> Get your certificate in just 1 hour at our center!</li>
+                </ul>
+            </div>
 
-            <!-- POST 5 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-011.webp" alt="आळंदी रजिस्टर मॅरेज" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">आळंदी रजिस्टर मॅरेज</h2>
-                    <p class="blog-card-date">May 06 2026</p>
-                    <p class="blog-card-excerpt">पवित्र आळंदीमध्ये आपल्या नवीन जीवनाची सुरुवात करा. फक्त ₹40,000 मध्ये संपूर्ण लग्न!</p>
-                    <a href="/blogs/post5" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <div class="package-box">
+                <h3>Exclusive Wedding Package: ₹40,000/-</h3>
+                <p>Includes Hall, Catering for 100 people, Decoration, and all Ritual materials.</p>
+            </div>
 
-            <!-- POST 6 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-016.webp" alt="Modern Unions & Legal Bonds" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">Modern Unions & Legal Bonds</h2>
-                    <p class="blog-card-date">May 07 2026</p>
-                    <p class="blog-card-excerpt">A complete guide on various forms of unions in India - Arranged, Love, Registered Marriage, and Live-in Relationships.</p>
-                    <a href="/blogs/post6" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <h2>Contemporary Choice</h2>
+            <div class="section-box">
+                <h3>4. Live-in Relationships</h3>
+                <p>In modern India, many couples choose to live together before marriage. While not a marriage, Indian courts recognize the rights of partners in long-term live-in relationships.</p>
+                <ul>
+                    <li><strong>Legal Status:</strong> Protected under domestic violence laws; children born have legal rights.</li>
+                    <li><strong>Transition:</strong> Many couples eventually choose to transition from a live-in status to a Registered Marriage for administrative ease.</li>
+                </ul>
+            </div>
 
-            <!-- POST 7 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-007.webp" alt="आळंदी रजिस्टर मॅरेज मार्गदर्शक" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">आळंदी रजिस्टर मॅरेज मार्गदर्शक</h2>
-                    <p class="blog-card-date">May 08 2026</p>
-                    <p class="blog-card-excerpt">आळंदी येथे रजिस्टर मॅरेज करण्याची संपूर्ण प्रक्रिया, आवश्यक कागदपत्रे आणि ₹40,000 पैकेज details.</p>
-                    <a href="/blogs/post7" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <h2>Why Choose Us in Alandi?</h2>
+            <p>Alandi is a sacred land, making it the perfect place for any union. We provide:</p>
+            <ul>
+                <li>Complete legal guidance for all types of marriages.</li>
+                <li>Documentation support (Aadhar, LC, Photos).</li>
+                <li>AC Rooms, pure veg catering, and ample parking.</li>
+            </ul>
+
+            <div class="contact-box">
+                <h3>Contact for Consultations</h3>
+                <p><strong>Varadvinayak Mangal Karyalaya, Kelgaon Road, Alandi, Pune</strong></p>
+                <p>Call/WhatsApp: 9921751408 / 8805934808</p>
+                <a href="tel:+919921751408" class="cta-btn">BOOK YOUR CONSULTATION</a>
+            </div>
         </div>
+
+        <a href="/blogs/" class="back-link">← Back to Blogs</a>
     </div>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-section footer-about">

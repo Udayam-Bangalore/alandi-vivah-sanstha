@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alandi Vivah Sanstha Blogs</title>
+    <title>आळंदी रजिस्टर मॅरेज - वरदविनायक मंगल कार्यालय | Alandi Vivah Sanstha</title>
+    <meta name="description" content="आळंदी रजिस्टर मॅरेज - पवित्र आळंदीमध्ये आपल्या नवीन जीवनाची सुरुवात करा. फक्त ₹40,000 मध्ये संपूर्ण लग्न.">
     <link rel="icon" href="/wp-content/uploads/2025/10/cropped-cropped-alandi-vivah-sanstha-logo-png-2-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -68,90 +69,134 @@
             color: #580700;
         }
 
-        /* Blog Section */
-        .blog-container {
-            max-width: 1200px;
+        /* Post Content */
+        .post-container {
+            max-width: 900px;
             margin: 0 auto;
             padding: 60px 20px;
         }
 
-        .blog-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .blog-header h1 {
-            font-size: 2.5rem;
-            color: #580700;
-            margin-bottom: 15px;
-        }
-
-        .blog-header p {
-            color: #580700;
-            font-weight: 500;
-        }
-
-        .posts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-
-        .blog-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-        }
-
-        .blog-card-image {
+        .post-image {
             width: 100%;
-            height: 220px;
+            height: 400px;
             object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 30px;
         }
 
-        .blog-card-body {
+        .post-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .post-header h1 {
+            font-size: 2.2rem;
+            color: #580700;
+            margin-bottom: 10px;
+        }
+
+        .post-header .post-date {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .post-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .post-content h2 {
+            color: #580700;
+            margin: 30px 0 15px;
+            font-size: 1.5rem;
+        }
+
+        .post-content h3 {
+            color: #333;
+            margin: 25px 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .post-content p {
+            margin-bottom: 15px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .post-content ul, .post-content ol {
+            margin: 15px 0 20px 25px;
+        }
+
+        .post-content li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .post-content strong {
+            color: #580700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3e2 0%, #fff8f0 100%);
+            border: 2px solid #EF7F13;
+            border-radius: 12px;
             padding: 25px;
+            margin: 25px 0;
+            text-align: center;
         }
 
-        .blog-card-title {
+        .highlight-box h3 {
+            color: #EF7F13;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .highlight-box p {
             font-size: 1.3rem;
             color: #333;
-            margin-bottom: 10px;
             font-weight: 600;
         }
 
-        .blog-card-date {
-            color: #888;
-            font-size: 0.85rem;
+        .contact-box {
+            background: #f0fdf4;
+            border: 2px solid #61CE70;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: #205B4F;
             margin-bottom: 15px;
         }
 
-        .blog-card-excerpt {
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.6;
+        .contact-box p {
+            margin-bottom: 10px;
+            color: #333;
         }
 
-        .blog-card-btn {
+        .contact-box a {
+            color: #580700;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .back-link {
             display: inline-block;
-            padding: 10px 25px;
+            margin-top: 40px;
+            padding: 12px 25px;
             background: #EF7F13;
             color: white;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 8px;
             font-weight: 500;
-            font-size: 0.9rem;
             transition: background 0.3s;
         }
 
-        .blog-card-btn:hover {
+        .back-link:hover {
             background: #D96B0F;
         }
 
@@ -280,13 +325,17 @@
                 justify-content: center;
                 gap: 15px;
             }
-            
-            .posts-grid {
-                grid-template-columns: 1fr;
+
+            .post-image {
+                height: 250px;
             }
-            
-            .blog-header h1 {
-                font-size: 2rem;
+
+            .post-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .post-content {
+                padding: 25px;
             }
         }
     </style>
@@ -316,91 +365,66 @@
         </div>
     </header>
 
-    <!-- BLOG CONTENT -->
-    <div class="blog-container">
-        <div class="blog-header">
-            <h1>Alandi Vivah Sanstha Blogs</h1>
-            <p>Expert tips, guides, and advice for your wedding journey</p>
+    <!-- POST CONTENT -->
+    <div class="post-container">
+        <img src="/wp-content/uploads/2026/alandi-gallery-011.webp" alt="आळंदी रजिस्टर मॅरेज" class="post-image">
+        
+        <div class="post-header">
+            <h1>आळंदी रजिस्टर मॅरेज</h1>
+            <p class="post-date">May 06 2026</p>
         </div>
 
-        <div class="posts-grid">
-            <!-- POST 1 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2025/10/alandi-vivah-sanstha-blogs-post1-thumbnail.webp" alt="Wedding Planning" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">Wedding Preparation Guide - Where to Start?</h2>
-                    <p class="blog-card-date">Oct 30 2025</p>
-                    <p class="blog-card-excerpt">लग्न हा प्रत्येकाच्या आयुष्यातला सर्वात खास दिवस असतो. पण या दिवसाची तयारी करणे म्हणजे एक मोठं प्रोजेक्टच असतं!</p>
-                    <a href="/blogs/post1" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+        <div class="post-content">
+            <h2>वरदविनायक मंगल कार्यालय व आळंदी विवाह संस्था</h2>
+            <p>पवित्र आळंदीमध्ये आपल्या नवीन जीवनाची सुरुवात करा. आळंदी हे केवळ एक तीर्थक्षेत्र नसून ते प्रेमाचे आणि विश्वासाचे प्रतीक आहे. अनेक जोडपी आपल्या विवाहासाठी या पवित्र भूमीची निवड करतात. पण विवाह केवळ विधीपुरता महत्वाचा नसून तो कायदेशीररित्या नोंदणीकृत असणेही तितकेच महत्वाचे आहे.</p>
 
-            <!-- POST 2 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-001.webp" alt="Court Marriage" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">Court Marriage: एक सोपा आणि वेगवान मार्ग</h2>
-                    <p class="blog-card-date">Mar 08 2026</p>
-                    <p class="blog-card-excerpt">आजच्या धावत्या जीवनात, प्रत्येक गोष्टीला जास्तीत जास्त सुलभ आणि वेगवान पद्धतीने करण्याची इच्छा असते.</p>
-                    <a href="/blogs/post2" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <h2>रजिस्टर मॅरेज का महत्वाचे आहे?</h2>
+            <p>रजिस्टर मॅरेज (नोंदणीकृत विवाह) मुळे आपल्याला कायदेशीर संरक्षण मिळते. पासपोर्ट, संयुक्त बँक खाते, किंवा परदेश प्रवासासाठी विवाह प्रमाणपत्र (Marriage Certificate) अनिवार्य असते. वरदविनायक मंगल कार्यालय तुम्हाला ही प्रक्रिया अत्यंत सोपी करून देते.</p>
 
-            <!-- POST 3 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-005.webp" alt="Love Marriage" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">Alandi Love Marriage म्हणजे काय?</h2>
-                    <p class="blog-card-date">Apr 08 2026</p>
-                    <p class="blog-card-excerpt">आळंदी लव्ह मॅरेज ही एक कायदेशीर विवाह प्रक्रिया आहे ज्याद्वारे प्रेमामुळे ठरलेल्या जोडप्यांना सरकार-मान्य रीतीने विवाह नोंदवता येतो.</p>
-                    <a href="/blogs/post3" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <h2>आवश्यक कागदपत्रे (Documents)</h2>
+            <h3>वधू-वरांचे:</h3>
+            <ul>
+                <li>जन्म दाखला किंवा शाळा सोडल्याचा दाखला (LC)</li>
+                <li>आधार कार्ड</li>
+                <li>मतदान कार्ड</li>
+            </ul>
 
-            <!-- POST 4 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-013.webp" alt="Register Marriage" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">Why Choose Alandi for Your Register Marriage?</h2>
-                    <p class="blog-card-date">May 05 2026</p>
-                    <p class="blog-card-excerpt">Alandi, the holy city of Saint Dnyaneshwar Maharaj, is not only a spiritual sanctuary but also one of the most trusted destinations.</p>
-                    <a href="/blogs/post4" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <h3>फोटो:</h3>
+            <ul>
+                <li>वधू-वरांचे प्रत्येकी 3 पासपोर्ट फोटो</li>
+            </ul>
 
-            <!-- POST 5 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-011.webp" alt="आळंदी रजिस्टर मॅरेज" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">आळंदी रजिस्टर मॅरेज</h2>
-                    <p class="blog-card-date">May 06 2026</p>
-                    <p class="blog-card-excerpt">पवित्र आळंदीमध्ये आपल्या नवीन जीवनाची सुरुवात करा. फक्त ₹40,000 मध्ये संपूर्ण लग्न!</p>
-                    <a href="/blogs/post5" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <h3>साक्षीदार:</h3>
+            <ul>
+                <li>3 साक्षीदार आणि त्यांचे आधार कार्ड व 2 फोटो</li>
+            </ul>
 
-            <!-- POST 6 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-016.webp" alt="Modern Unions & Legal Bonds" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">Modern Unions & Legal Bonds</h2>
-                    <p class="blog-card-date">May 07 2026</p>
-                    <p class="blog-card-excerpt">A complete guide on various forms of unions in India - Arranged, Love, Registered Marriage, and Live-in Relationships.</p>
-                    <a href="/blogs/post6" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <div class="highlight-box">
+                <h3>धमाका ऑफर!</h3>
+                <p>फक्त ₹40,000 मध्ये संपूर्ण लग्न</p>
+                <p>100 लोकांचे शाकाहारी जेवण + हॉल + सर्व साहित्य</p>
+            </div>
 
-            <!-- POST 7 -->
-            <article class="blog-card">
-                <img src="/wp-content/uploads/2026/alandi-gallery-007.webp" alt="आळंदी रजिस्टर मॅरेज मार्गदर्शक" class="blog-card-image">
-                <div class="blog-card-body">
-                    <h2 class="blog-card-title">आळंदी रजिस्टर मॅरेज मार्गदर्शक</h2>
-                    <p class="blog-card-date">May 08 2026</p>
-                    <p class="blog-card-excerpt">आळंदी येथे रजिस्टर मॅरेज करण्याची संपूर्ण प्रक्रिया, आवश्यक कागदपत्रे आणि ₹40,000 पैकेज details.</p>
-                    <a href="/blogs/post7" class="blog-card-btn">Read More</a>
-                </div>
-            </article>
+            <h2>आमच्या सुविधा</h2>
+            <ul>
+                <li>5 ते 500 व्यक्तींची बैठक क्षमता असलेला एअर कंडिशन (AC) हॉल</li>
+                <li>उत्तम दर्जाचे शाकाहारी केटरिंग आणि आकर्षक सजावट</li>
+                <li>अनुभवी वकीलांच्या मार्गदर्शनाखाली 1 तासात सर्टिफिकेट मिळण्याची सुविधा</li>
+                <li>लव्ह मॅरेज, अरेंज मॅरेज आणि आंतरजातीय विवाहांसाठी पूर्ण सहकार्य</li>
+            </ul>
+
+            <div class="contact-box">
+                <h3>संपर्क करा</h3>
+                <p><strong>वरदविनायक मंगल कार्यालय</strong></p>
+                <p>+91 9921751408 | +91 8805934808</p>
+                <p><strong>आळंदी विवाह संस्था</strong></p>
+                <p>पत्ता: केळगाव रोड, सुतार पांचाळ धर्मशाळेसमोर, आळंदी (दे.), ता. खेड, जि. पुणे.</p>
+            </div>
+
+            <p style="text-align: center; margin-top: 20px;"><strong>वरदविनायक मंगल कार्यालय - तुमच्या सुखी आयुष्याचा सोबती.</strong></p>
         </div>
+
+        <a href="/blogs/" class="back-link">← Back to Blogs</a>
     </div>
 
     <!-- FOOTER -->
